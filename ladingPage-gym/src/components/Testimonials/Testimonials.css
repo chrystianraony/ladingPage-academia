@@ -15,18 +15,18 @@
   color: white;
 }
 
-.left-t >:nth-child(1) {
+.left-t > :nth-child(1) {
   color: var(--orange);
   font-weight: bold;
 }
 
-.left-t >:nth-child(2),
-.left-t >:nth-child(3) {
+.left-t > :nth-child(2),
+.left-t > :nth-child(3) {
   font-weight: bold;
   font-size: 3rem;
 }
 
-.left-t >:nth-child(4) {
+.left-t > :nth-child(4) {
   text-transform: none;
   text-align: justify;
   letter-spacing: 2px;
@@ -47,7 +47,7 @@
   top: 2rem;
 }
 
-.right-t >:nth-child(1){
+.right-t > :nth-child(1) {
   position: absolute;
   width: 17rem;
   height: 20rem;
@@ -57,7 +57,7 @@
   top: 0.9rem;
 }
 
-.right-t >:nth-child(2) {
+.right-t > :nth-child(2) {
   position: absolute;
   width: 17rem;
   height: 19rem;
@@ -74,7 +74,39 @@
   left: 3rem;
 }
 
-.arrows>img {
+.arrows > img {
   width: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .Testimonials {
+    flex-direction: column;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
 }
