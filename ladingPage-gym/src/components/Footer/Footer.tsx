@@ -20,6 +20,9 @@ const Footer = () => {
         </div>
           <p>Todos os direitos reservados &copy;</p> 
       </div>
+      <div className="blur blur-f-1"></div>
+      <div className="blur blur-f-2"></div>
+      <div></div>
     </div>
   );
 };
