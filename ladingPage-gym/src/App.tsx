@@ -1,17 +1,19 @@
 import './App.css'
 import Hero from './components/Hero'
 import Plans from './components/Plans/Plans'
-import Programs from './components/Programs/Programs'
+import Program from './components/Program/Programs'
 import Reason from './components/Reason/Reason'
+import Testimonials from './components/Testimonials/Testimonials'
 
 function App() {
   
   return (
     <div className="App">
       <Hero />
-      <Programs />
+      <Program />
       <Reason />
       <Plans />
+      <Testimonials />
     </div>
   )
 }
