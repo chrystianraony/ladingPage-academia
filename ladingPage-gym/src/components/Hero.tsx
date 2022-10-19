@@ -6,6 +6,7 @@ import hero_image_back from "../assets/hero_image_back.png";
 import Heart from "../assets/heart.png";
 import calories from "../assets/calories.png";
 import { motion } from "framer-motion";
+import CountUp from 'react-countup';
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
@@ -42,15 +43,21 @@ const Hero = () => {
         {/* figuras de ilustrações*/}
         <div className="figures">
           <div>
-            <span>+50 </span>
+            <span>+
+              <CountUp delay={2} end={50} />
+            </span>
             <span>TREINADORES</span>
           </div>
           <div>
-            <span>+200 </span>
+            <span>+
+              <CountUp delay={2} end={200} />
+            </span>
             <span>MEMBROS INSCRITOS</span>
           </div>
           <div>
-            <span>+20 </span>
+            <span>+
+              <CountUp delay={2} end={25}/>
+            </span>
             <span>PROGRAMAS </span>
           </div>
         </div>
