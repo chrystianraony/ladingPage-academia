@@ -48,7 +48,7 @@ const Header = () => {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
-              to="Reason"
+              to="reasons"
               span={true}
               smooth={true}
               >
@@ -58,7 +58,7 @@ const Header = () => {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
-              to="Plans"
+              to="plans"
               span={true}
               smoother={true}
             >
