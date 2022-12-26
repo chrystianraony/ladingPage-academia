@@ -3,27 +3,27 @@ import "./Join.css";
 import emailjs from "@emailjs/browser";
 
 const Join = () => {
-  // const form = useRef();
-  // const templateParams = {
-  //   name: "James",
-  //   notes: "Check this out!",
-  // };
+ const form = useRef();
+ const templateParams = {
+  name: "James",
+   notes: "Check this out!",
+ };
 
-  // emailjs
-  //   .send(
-  //     "<YOUR_SERVICE_ID>",
-  //     "<YOUR_TEMPLATE_ID>",
-  //     templateParams,
-  //     "<YOUR_PUBLIC_KEY>"
-  //   )
-  //   .then(
-  //     (response) => {
-  //       console.log("SUCCESS!", response.status, response.text);
-  //     },
-  //     (err) => {
-  //       console.log("FAILED...", err);
-  //     }
-  //   );
+// emailjs
+//   .send(
+//     "<YOUR_SERVICE_ID>",
+//     "<YOUR_TEMPLATE_ID>",
+//     templateParams,
+//     "<YOUR_PUBLIC_KEY>"
+//   )
+//   .then(
+//     (response) => {
+//       console.log("SUCCESS!", response.status, response.text);
+//     },
+//     (err) => {
+//       console.log("FAILED...", err);
+//     }
+//   );
 
   return (
     <div className="Join" id="join-us">
